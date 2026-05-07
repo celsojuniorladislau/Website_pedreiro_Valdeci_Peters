@@ -3,50 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valdeci Peters, pedreiro profissional para alvenaria, pisos, revestimentos, telhados, reboco, pintura, hidráulica, muros, calçadas e manutenção em geral.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23211b17'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='24' font-family='Arial' font-weight='700' fill='white'%3EVP%3C/text%3E%3C/svg%3E">
   <title>Valdeci Peters | Pedreiro Profissional</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obra: {
+              50: '#f8f5ef',
+              100: '#eee4d3',
+              500: '#b8874d',
+              700: '#7a5632',
+              900: '#211b17'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-obra-50 text-stone-900 antialiased">
+  <header class="sticky top-0 z-40 border-b border-stone-200/80 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#" class="flex items-center gap-3" aria-label="Valdeci Peters">
+        <span class="grid h-10 w-10 place-items-center rounded bg-obra-900 text-sm font-black text-white">VP</span>
+        <span>
+          <span class="block text-base font-extrabold leading-tight tracking-wide">Valdeci Peters</span>
+          <span class="block text-xs font-medium uppercase tracking-[0.18em] text-obra-700">Pedreiro profissional</span>
+        </span>
+      </a>
 
-  <!-- Header -->
-  <header class="p-6 bg-white shadow-sm">
-    <nav class="flex justify-between items-center max-w-4xl mx-auto">
-      <h1 class="text-2xl font-bold text-orange-700">Valdeci Peters</h1>
+      <div class="hidden items-center gap-8 text-sm font-semibold text-stone-700 md:flex">
+        <a class="hover:text-obra-700" href="#servicos">Serviços</a>
+        <a class="hover:text-obra-700" href="#trabalho">Como trabalho</a>
+        <a class="hover:text-obra-700" href="#contato">Contato</a>
+      </div>
+
+      <a href="https://wa.me/5527998077917?text=Ol%C3%A1,%20Valdeci.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="hidden rounded bg-obra-900 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-obra-700 md:inline-flex">
+        Pedir orçamento
+      </a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="max-w-4xl mx-auto p-6 py-12 text-center">
-    <h2 class="text-4xl font-extrabold mb-4">Precisando de alguém de confiança?</h2>
-    <p class="text-xl text-gray-600 mb-8">Serviços com qualidade e compromisso! Do alicerce ao acabamento.</p>
-    <a href="https://wa.me/5527998077917" class="bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition">Solicitar Orçamento no WhatsApp</a>
-  </section>
+  <main>
+    <section class="overflow-hidden bg-white">
+      <div class="mx-auto max-w-7xl px-5 py-8 md:py-12">
+        <img src="hero.png" alt="Valdeci Peters, pedreiro profissional, serviços com qualidade e compromisso" class="w-full rounded border border-stone-200 shadow-2xl shadow-stone-900/15">
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/5527998077917" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
-    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.591 5.52 0 10.012-4.493 10.012-10.013 0-5.52-4.492-10.012-10.012-10.012s-10.012 4.492-10.012 10.012c0 2.149.676 4.195 1.947 5.918l-1.282 4.688 4.685-1.286z"/></svg>
+        <div class="grid gap-6 border-b border-x border-stone-200 bg-white p-5 shadow-lg shadow-stone-900/5 md:grid-cols-[1fr_auto] md:items-center md:p-7">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-obra-700">Obra, reforma e manutenção</p>
+            <h1 class="mt-2 text-2xl font-black text-obra-900 md:text-3xl">Valdeci Peters - Pedreiro Profissional</h1>
+            <p class="mt-3 max-w-3xl text-base leading-7 text-stone-700">Atendimento para alvenaria, pisos, revestimentos, telhados, reboco, pintura, hidráulica, muros, calçadas e reparos em geral.</p>
+          </div>
+
+          <div class="flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">
+            <a href="https://wa.me/5527998077917?text=Ol%C3%A1,%20Valdeci.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="inline-flex items-center justify-center rounded bg-green-700 px-6 py-4 text-base font-extrabold text-white shadow-lg shadow-green-900/15 transition hover:bg-green-800">
+              Chamar no WhatsApp
+            </a>
+            <a href="tel:+5527998077917" class="inline-flex items-center justify-center rounded border border-stone-300 bg-white px-6 py-4 text-base font-extrabold text-stone-900 transition hover:border-obra-700 hover:text-obra-700">
+              Ligar agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="mx-auto max-w-6xl px-5 py-16">
+      <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-obra-700">Serviços</p>
+          <h2 class="mt-2 text-3xl font-black text-obra-900 md:text-4xl">Da estrutura ao acabamento</h2>
+        </div>
+        <p class="max-w-xl text-base leading-7 text-stone-700">Execução clara, combinados bem definidos e cuidado com o resultado final em cada etapa do serviço.</p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">01</span>
+          <h3 class="font-extrabold text-stone-950">Alvenaria</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Paredes, pequenos reparos, reformas e ajustes estruturais.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">02</span>
+          <h3 class="font-extrabold text-stone-950">Pisos e revestimentos</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Assentamento com alinhamento, nivelamento e acabamento limpo.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">03</span>
+          <h3 class="font-extrabold text-stone-950">Telhados</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Manutenção, troca de peças e pequenos reparos de cobertura.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">04</span>
+          <h3 class="font-extrabold text-stone-950">Reboco e pintura</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Preparação de paredes, acabamento e pintura residencial.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">05</span>
+          <h3 class="font-extrabold text-stone-950">Hidráulica</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Instalações simples, ajustes, vazamentos e manutenção.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">06</span>
+          <h3 class="font-extrabold text-stone-950">Muros e calçadas</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Construção, reforma, acabamento e recuperação de áreas externas.</p>
+        </article>
+        <article class="rounded border border-stone-200 bg-white p-5 shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-obra-100 text-lg font-black text-obra-700">07</span>
+          <h3 class="font-extrabold text-stone-950">Manutenção geral</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600">Pequenos serviços para deixar casa, loja ou obra em ordem.</p>
+        </article>
+        <article class="rounded border border-obra-700 bg-obra-900 p-5 text-white shadow-sm">
+          <span class="mb-4 grid h-10 w-10 place-items-center rounded bg-white/10 text-lg font-black">+</span>
+          <h3 class="font-extrabold">Precisa de outro serviço?</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-200">Envie fotos e explique o que precisa para avaliar o melhor caminho.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="trabalho" class="bg-white py-16">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-obra-700">Como trabalho</p>
+          <h2 class="mt-2 text-3xl font-black text-obra-900 md:text-4xl">Atendimento simples, combinado claro e execução organizada.</h2>
+        </div>
+        <div class="grid gap-4 md:grid-cols-3">
+          <div class="border-l-4 border-obra-500 bg-obra-50 p-5">
+            <p class="text-sm font-black uppercase tracking-wide text-obra-700">Passo 1</p>
+            <h3 class="mt-3 font-extrabold">Contato</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-700">Você envia mensagem, fotos ou vídeo do local e descreve o serviço.</p>
+          </div>
+          <div class="border-l-4 border-obra-500 bg-obra-50 p-5">
+            <p class="text-sm font-black uppercase tracking-wide text-obra-700">Passo 2</p>
+            <h3 class="mt-3 font-extrabold">Avaliação</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-700">O escopo é combinado com prazo, materiais e forma de execução.</p>
+          </div>
+          <div class="border-l-4 border-obra-500 bg-obra-50 p-5">
+            <p class="text-sm font-black uppercase tracking-wide text-obra-700">Passo 3</p>
+            <h3 class="mt-3 font-extrabold">Execução</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-700">Serviço feito com cuidado, limpeza possível e foco no acabamento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mx-auto max-w-6xl px-5 py-16">
+      <div class="grid overflow-hidden rounded bg-obra-900 text-white shadow-xl shadow-stone-900/15 md:grid-cols-[1fr_360px]">
+        <div class="p-8 md:p-10">
+          <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-obra-500">Orçamento</p>
+          <h2 class="mt-3 text-3xl font-black md:text-4xl">Fale direto com Valdeci Peters.</h2>
+          <p class="mt-4 max-w-2xl text-base leading-7 text-stone-200">Para agilizar, mande fotos do local, bairro, tipo de serviço e quando deseja começar. Assim fica mais fácil avaliar prazo e materiais.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="https://wa.me/5527998077917?text=Ol%C3%A1,%20Valdeci.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="inline-flex justify-center rounded bg-green-600 px-6 py-4 font-extrabold text-white transition hover:bg-green-700">Enviar mensagem</a>
+            <a href="tel:+5527998077917" class="inline-flex justify-center rounded border border-white/25 px-6 py-4 font-extrabold text-white transition hover:bg-white/10">(27) 99807-7917</a>
+          </div>
+        </div>
+        <div class="min-h-64 bg-[url('rodape.png')] bg-cover bg-center"></div>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/5527998077917?text=Ol%C3%A1,%20Valdeci.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-white shadow-xl shadow-green-900/25 transition hover:bg-green-700" aria-label="Chamar Valdeci Peters no WhatsApp">
+    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.48 15.02L2.5 21.5l4.6-1.04A9.9 9.9 0 1 0 12.04 2Zm5.78 14.07c-.24.68-1.42 1.3-1.98 1.34-.53.04-1.2.06-1.94-.12-.45-.11-1.03-.33-1.77-.65-3.12-1.35-5.15-4.49-5.31-4.7-.16-.21-1.27-1.69-1.27-3.23 0-1.54.8-2.29 1.08-2.61.28-.32.62-.4.82-.4h.6c.19 0 .45-.07.7.53.24.58.83 2.02.9 2.17.08.16.12.34.03.55-.08.21-.12.34-.28.53-.16.19-.33.42-.47.56-.16.16-.32.33-.14.65.19.32.83 1.37 1.78 2.22 1.22 1.09 2.25 1.43 2.57 1.59.32.16.51.13.7-.08.19-.21.8-.93 1.01-1.25.21-.32.43-.27.72-.16.29.11 1.86.88 2.18 1.04.32.16.53.24.61.37.08.13.08.76-.16 1.44Z"/></svg>
   </a>
 
-  <!-- Serviços -->
-  <section class="max-w-4xl mx-auto p-6 py-12">
-    <h3 class="text-3xl font-bold text-center mb-8">Nossos Serviços</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Alvenaria</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Pisos e Revestimentos</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Telhados</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Reboco e Acabamentos</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Pintura</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Hidráulica</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Muros e Calçadas</div>
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">Manutenção em Geral</div>
+  <footer class="border-t border-stone-200 bg-white px-5 py-8">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-stone-600 md:flex-row md:items-center md:justify-between">
+      <p><strong class="text-stone-900">Valdeci Peters</strong> - Pedreiro Profissional</p>
+      <p>WhatsApp: <a class="font-bold text-obra-700 hover:text-obra-900" href="https://wa.me/5527998077917">(27) 99807-7917</a></p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center p-8 bg-gray-200">
-    <p class="font-bold text-lg">Valdeci Peters - Pedreiro Profissional</p>
-    <p>Telefone: (27) 99807-7917</p>
   </footer>
-
 </body>
 </html>
